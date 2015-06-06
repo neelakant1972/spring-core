@@ -1,7 +1,9 @@
 package guru.springframework.repository;
 
 import guru.springframework.model.Product;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class ProductRepositoryImpl implements ProductRepository{
     @Override
     public Product getProduct(Long id){
